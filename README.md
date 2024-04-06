@@ -1,0 +1,1 @@
+Eu ainda preciso descobrir se tem como deixar todos os caminhos rodando num play só, mas se pá, é por isso q existe opção de save e reload e tecnicamente oq eu fiz tá certo, mas enfim, n sei direito oq eu to fazendo mas tá funcionado
