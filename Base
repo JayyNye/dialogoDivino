@@ -1,0 +1,10 @@
+public class Base
+{
+    public string name;
+    public string message;
+
+    public Base(string _name, string _message)
+    {
+        this.name = _name;
+        this.message = _message;
+    }

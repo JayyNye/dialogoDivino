@@ -1,0 +1,83 @@
+public class Falafala : MonoBehaviour
+{
+    List<Base> dialog = new List<Base>();
+    List<Base> falaA = new List<Base>();
+    List<Base> falaB = new List<Base>();
+    List<Base> falaC = new List<Base>();
+
+    int aux2 = 0;
+    // Lets go e seja oq deus quiser
+    void Start()
+    {
+        dialog.Add(new Base("Narrador", "É o ano 0 de um novo ciclo, assim como vários outros, você ascendeu como um deus recentemente após ter seus esforços reconhecidos enquanto você era só um mortal. Toda essa história de “Ser deus” é empolgante, você tem seu próprio domínio, logo poderá ter seu próprio clero e até mesmo um templo, só uma questão de paciência"));
+        dialog.Add(new Base("Narrador", "“Paciência”, outro recurso necessário para manter seu cargo divino. Você não é o único deus jovem, o que significa que você conheceu deuses tão novos quanto você e deuses que assumiram cargos novos em domínios religiosos novos. Você reconhece vagamente alguns, enquanto não sabe nada sobre outros, mas tudo bem, os que “Não chamam atenção” não são o problema, os deuses da guerra são o problema."));
+        dialog.Add(new Base("Narrador", "Existem dois deles: Myrsen, deus das batalhas sangrentas. Em vida mortal ele já era um semideus com uma profecia nas costas que “cantava os feitos” de seu grande poder. Ele ascendeu como deus da guerra após matar o “deus usurpado”, Aynamo."));
+        dialog.Add(new Base("Narrador", "A outra deusa da guerra, Ten’wionach, deusa da sabedoria e da estratégia. Em vida mortal ela foi alguém que se destacou pelos seus conhecimentos e intelecto, sendo a maior estrategista da sua era, seus seguidores atuais são pessoas que já a seguiam antes dela ascender e eles afirmam que a vitória contra Aynamo só veio graças a ela."));
+        dialog.Add(new Base("Narrador", "Os mitos que se espalham pelos reinos dizem que os deuses da guerra estão em um duelo infinito, pois “Só pode existir um”, mas que nenhum dos dois chegou a vencer e talvez nunca vá."));
+        dialog.Add(new Base("Narrador", "O que você sabe é que alguns deuses dizem que já houve um vencedor no duelo, mas que para a vitória ser reconhecida, quem venceu precisava matar o que perdeu, e o que venceu foi o que não tinha coragem para isso…"));
+        dialog.Add(new Base("Narrador", "Você também sabe que são deuses irmãos, eles cresceram juntos como mortais e viraram deuses da guerra juntos justamente por terem sido igualmente honrados na batalha final contra o “deus usurpado, Aynamo”. Essa batalha teria sido um problema para todos os deuses se eles não tivessem posto um fim, então ambos tem grande renome mesmo entre deuses antigos…"));
+        dialog.Add(new Base("Narrador", "Dito tudo isso, eles são um pé no saco de lidar, puta que pariu!"));
+        dialog.Add(new Base("Narrador", "Esses dois brigam o tempo todo em TODAS as reuniões, mesmo quando estão em silêncio o clima é como uma gritaria. Eles são deuses respeitados, fortes, honrosos, tudo mais e tal… Mas eles não cansam de brigar sobre TUDO!"));
+        dialog.Add(new Base("Narrador", "A pauta atual era alguma coisa sobre “Influência dos deuses sobre os mortais”, se no começo desse novo ciclo os deuses deveriam estar mais presentes ou menos presentes, ou algo assim. Os deuses iam dando seus motivos do porquê ser contra ou a favor, cada um dos deuses da guerra conseguiu convencer parte do panteão e tinham os deuses que alegaram tanto seus votos quanto que iriam ignorar o resultado, o que significa que para ter uma conclusão, precisavam de mais alguns votos, o seu incluso."));
+        dialog.Add(new Base("Narrador", "Estar entre os dois deuses da guerra não era algo que ninguém queria, mas que ninguém te avisou ser uma possibilidade. Eles te matariam se você escolhesse o outro? Te baniriam para um domínio inferior e te mandariam para o esquecimento? Iriam te mandar tomar no cu? Não tem como saber…"));
+        dialog.Add(new Base("Ten’wionach", "… O grande ponto é que os mortais precisam da gente tanto quanto nós precisamos deles, essas “provações” e “mensagens enigmáticas” que geram distanciamento só tornam as coisas mais difíceis para todo mundo! Se a gente tiver outra “Aynamo saga” e os deuses ficarem inúteis mais uma vez? Com todo respeito aos deuses que eram deuses na época da Aynamo saga."));
+        dialog.Add(new Base("Narrador", "Você sente que, por baixo da venda, ela está encarando alguém, mas não sabe exatamente quem. Um burburinho dos deuses que tinham discordado dela começa a crescer, mas Myrsen bate na mesa antes que alguém realmente mude de opinião."));
+        dialog.Add(new Base("Mysern", "Você fala como se deuses fossem feitos para serem falhos, se quer falar de deuses falhos, se limite a se referir apenas a si mesma."));
+        dialog.Add(new Base("Ten’wionach", "Escuta aqui seu–"));
+        dialog.Add(new Base("Myrsen", "O grande ponto é que deuses são feitos para serem perfeitos, nós somos perfeitos a partir do momento que nos tornamos deuses. Se os mortais querem um favor divino, que se tornem mais fortes e dignos de merecerem. Não foi o que nós dois fizemos? Não foi o que milhares tentaram fazer?"));
+        dialog.Add(new Base("Ten’wionach", "E o que isso nos custou?"));
+        dialog.Add(new Base("Myrsen", "Se nós conseguimos enquanto tantos falharam, existe um propósito. Se todos aqui conseguiram, então existe um diferencial."));
+        dialog.Add(new Base("Narrador", "Você percebe que você é um objeto da atenção do panteão enquanto Myrsen aponta na sua direção e de alguns outros deuses que você não conhecia."));
+        dialog.Add(new Base("Myrsen", "Deuses tem testes, provações são a forma mais básica de buscar reconhecimento, e se os mortais querem questionar as escolhas dos deuses, que culpem os avatares e guias espirituais que são mortais e entenderam errado. Cada palavra de deus é uma regra e cada ação é justa. Se estamos começando um novo ciclo, deveríamos fazer jus a isso."));
+        dialog.Add(new Base("Ten’wionach", "Provações e mimimi e necessidade de fazer coisas e ser reconhecido pra amaciar o próprio ego."));
+        dialog.Add(new Base("Myrsen", "Muito madura..."));
+        dialog.Add(new Base("Ten’wionach", "Meu ponto é simples: Quer ser um cuzão, seja um deus cuzão, mas deixe os mortais saberem o quão cuzão você é. Ninguém tá te pedindo pra ir na padaria de mãos dadas comprar pão com os seus fieis."));
+        dialog.Add(new Base("Myrsen", "Meu ponto é: Quer demonstrar fraqueza e parecer uma igual quando você ascendeu para ser um ser superior? Faça isso, mas não torne uma regra para fazer com que os outros pareçam tão fracos quanto você."));
+        dialog.Add(new Base("Ten’wionach", "Se eu fosse você eu diria “Vem na mão, que eu te mostro o deus fraco”, mas eu não sou você. Nós dois já sabemos a resposta, mas essa não é a resposta para a discussão de hoje…"));
+        dialog.Add(new Base("Narrador", "Você percebe que alguns deuses mudam o voto, outros que tinham se abstido votam e alguns que votaram se abstém, a movimentação dura alguns minutos e você percebe que agora os dois deuses da guerra olham para você."));
+        dialog.Add(new Base("Narrador", "Eles estão esperando você votar. Você é o último e seu voto seria a diferença entre aprovar ou negar a pauta."));
+        dialog.Add(new Base("Narrador", "Se deseja concordar com a proposta de deuses se aproximarem e guiarema  humanidade mais de perto, clique na tecla A"));
+        dialog.Add(new Base("Narrador", "Se você acha que os deuses devem manter distância e assegurar sua imponência e autoridade misteriosa, clique na tecla M"));
+        dialog.Add(new Base("Narrador", "Se você não tá afim de arriscar ter um dos dois deuses da guerra te odiando, clique na tecla F"));
+
+        //Aparentemente eu tenho q começar uma cena nova pra cada um dos finais pra eles rodarem corretamente, deve ter um jeito de fazer isso aqui se pá mas eu n sei como, enfim
+
+        falaA.Add(new Base("Narrador", "Você não fala nada, apenas escreve seu voto e levanta sua plaquinha sabendo como você gostaria de ter sido tratado como mortal e como isso pode ajudar as pessoas. Você nota a deusa sorrindo e o deus te olhando como se fosse te fuzilar. Ele faz menção de levantar e a deusa senta na mesa na frente dele."));
+        falaA.Add(new Base("Ten’wionach", "Na-a-ah, Mymy, não seja um mal perdedor."));
+
+        falaB.Add(new Base("Narrador", "Você sente que, se é pra ser um deus, talvez seja melhor fazer isso da forma que sempre funcionou. Você escreve e levanta sua plaquinha, sentindo imediatamente a aprovação do deus e uma sensação desconfortável emanando da deusa, você olha pra ela e vê o deus dando um tapinha na cabeça dela."));
+        falaB.Add(new Base("Myrsen", "Já falamos sobre amaldiçoar as pessoas que discordam de você, Anie. É por isso que você não é uma deusa democrata"));
+
+        falaC.Add(new Base("Narrador", "Os deuses te encaram esperando uma resposta e você não tem certeza se quer fazer um dos dois desgostar de você tão cedo, você bate os dedos nervosamente na mesa. Você é um deus, mas que tipo de deus você quer ser? A pressão em fazer escolhas tão importantes logo assim de cara é esmagadora."));
+        falaC.Add(new Base("Chaos", "Vocês dois vão mesmo esperar uma resposta de uma cadeira vazia?"));
+        falaC.Add(new Base("Narrador", "Você escuta isso e percebe que não está mais sentado no seu lugar, você está no chão atrás de uma cadeira e tem uma película a sua volta, seu reflexo não aparece, você está invisível."));
+        falaC.Add(new Base("Ten’wionach e Myrsen", "Chaos!"));
+
+    }
+
+
+    void Update()
+    {
+        if (Input.GetKeyDown("space") & aux2 < dialog.Count)
+        {
+            print(dialog[aux2].name + ": " + dialog[aux2].message);
+            aux2++;
+        }
+        else if (Input.GetKeyDown(KeyCode.A) & aux2 < falaA.Count)
+        {
+            print(falaA[aux2].name + ": " + falaA[aux2].message);
+            aux2++;
+        } 
+        if (Input.GetKeyDown(KeyCode.M) & aux2 < falaB.Count)
+        {
+            print(falaB[aux2].name + ": " + falaB[aux2].message);
+            aux2++;
+        }
+        else if (Input.GetKeyDown(KeyCode.F) & aux2 < falaC.Count)
+        {
+            print(falaC[aux2].name + ": " + falaC[aux2].message);
+            aux2++;
+        }
+        else { }
+    }
+}
